@@ -9,9 +9,16 @@ using System;
 
 class Player
 {
-    public string Name { get; set; }
-    public int[] PenaltyTimes { get; set; }
-    public int TotalPenalty => CalculateTotalPenalty();
+    public string Name { get; }
+    public int[] PenaltyTimes { get; }
+    public int TotalPenalty { get; }
+
+    public Player(string name, int[] penaltyTimes)
+    {
+        Name = name;
+        PenaltyTimes = penaltyTimes;
+        TotalPenalty = CalculateTotalPenalty();
+    }
 
     private int CalculateTotalPenalty()
     {
@@ -23,6 +30,14 @@ class Player
         }
         return total;
     }
+
+    public void PrintTotalPenalty()
+    {
+        if (TotalPenalty != int.MaxValue)
+        {
+            Console.WriteLine($"{Name} - {TotalPenalty} мин");
+        }
+    }
 }
 
 class Program
@@ -31,11 +46,10 @@ class Program
     {
         Player[] players = new Player[]
         {
-            new Player { Name = "Player 1", PenaltyTimes = new int[] {2, 5, 2} },
-            new Player { Name = "Player 2", PenaltyTimes = new int[] {5, 5, 5} },
-            new Player { Name = "Player 3", PenaltyTimes = new int[] {10} },
-            new Player { Name = "Player 4", PenaltyTimes = new int[] {10, 2, 2}},
-
+            new Player("Player 1", new int[] {2, 5, 2}),
+            new Player("Player 2", new int[] {5, 5, 5}),
+            new Player("Player 3", new int[] {10}),
+            new Player("Player 4", new int[] {10, 2, 2}),
         };
 
         for (int i = 1; i < players.Length; i++)
@@ -54,10 +68,7 @@ class Program
         Console.WriteLine("Список кандидатов в сборную:");
         foreach (var player in players)
         {
-            if (player.TotalPenalty != int.MaxValue)
-            {
-                Console.WriteLine($"{player.Name} - {player.TotalPenalty} мин");
-            }
+            player.PrintTotalPenalty();
         }
     }
 }

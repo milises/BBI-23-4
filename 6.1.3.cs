@@ -1,26 +1,53 @@
-﻿// Уровень 1. Номер 3
-// Радиокомпания провела опрос слушателей по вопросу: «Кого вы считаете
-// человеком года?». Определить пять наиболее часто встречающихся ответов и их
-// долей (в процентах от общего количества ответов).
+﻿//1 уровень.задание 3
+//Радиокомпания провела опрос слушателей по вопросу: «Кого вы считаете человеком года?». 
+//Определить пять наиболее часто встречающихся ответов и их долей
+//(в процентах от общего количества ответов).
+using System;
+
 struct Person
 {
     private string Name;
-    public int Calls { get; private set; }
-    public double prop { get; private set; }
+    private int Calls;
+    private double prop;
+
     public Person(string name, int calls)
     {
         Name = name;
         Calls = calls;
+        prop = 0;
     }
+
+    public void SetCalls(int calls)
+    {
+        Calls = calls;
+    }
+
+    public int GetCalls()
+    {
+        return Calls;
+    }
+
+    public void SetProp(double proportion)
+    {
+        prop = proportion;
+    }
+
+    public double GetProp()
+    {
+        return prop;
+    }
+
     public void Proportion(int count)
     {
         prop = (double)Calls * 100 / count;
     }
+
     public void Print()
     {
-        Console.WriteLine("{0:f0} был выбран {1:f0} раз(а), доля от всех выбранных: {2:f3}%", Name, Calls, prop);
+        Console.WriteLine("{0:f0} был выбран {1:f0} раз(а), доля от всех выбранных: {2:f3}%", Name, Calls, GetProp());
     }
 }
+
 class Program
 {
     static void Sort(Person[] array)
@@ -30,7 +57,7 @@ class Program
             Person k = array[i];
             int j = i - 1;
 
-            while (j >= 0 && array[j].prop > k.prop)
+            while (j >= 0 && array[j].GetProp() > k.GetProp())
             {
                 array[j + 1] = array[j];
                 j--;
@@ -38,6 +65,7 @@ class Program
             array[j + 1] = k;
         }
     }
+
     static void Main()
     {
         Person[] people = new Person[]
@@ -52,8 +80,9 @@ class Program
             new Person("Василиса Валерьева", 20),
             new Person("Мира Голарьева", 10),
         };
+
         int count = 0;
-        for (int i = 0; i < people.Length; i++) count += people[i].Calls;
+        for (int i = 0; i < people.Length; i++) count += people[i].GetCalls();
         for (int i = 0; i < people.Length; i++) people[i].Proportion(count);
 
         Sort(people);
@@ -64,6 +93,3 @@ class Program
         }
     }
 }
-
-
-
