@@ -96,9 +96,20 @@ class Task11 : Task
 {
     public override void Solve(string input)
     {
-        string[] surnames = input.Split(',');
+        char[] separators = new char[] { ',', ';', ' ', '\n' };
 
-        Array.Sort(surnames, (x, y) => Char.ToLower(x.Trim()[0]) - Char.ToLower(y.Trim()[0]));
+        string[] surnames = input.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+
+        Array.Sort(surnames, (x, y) =>
+        {
+            int compareResult = Char.ToLower(x.Trim()[0]) - Char.ToLower(y.Trim()[0]);
+            if (compareResult == 0)
+            {
+                compareResult = string.Compare(x.Trim(), y.Trim());
+            }
+
+            return compareResult;
+        });
 
         foreach (var surname in surnames)
         {
@@ -106,6 +117,7 @@ class Task11 : Task
         }
     }
 }
+
 class Task14 : Task
 {
     public override void Solve(string input)
