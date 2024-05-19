@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cr3vHcmuF0pOlc74N87KZwO3CLJN+W6S015IzMYSQhaFALc2m7uon4ccj419qxbYLcF6POSDWkC1XpIocRBjJA==",
+  "success": true,
+  "projectFilePath": "/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.2/9.2.csproj",
+  "expectedPackageFiles": [
+    "/Users/aleksandrpodzemelnyj/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

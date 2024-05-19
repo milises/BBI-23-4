@@ -1,0 +1,16 @@
+{
+  "Players": [
+    "Player 1",
+    "Player 2",
+    "Player 3",
+    "Player 4",
+    "Player 5"
+  ],
+  "Penalties": [
+    2,
+    5,
+    6,
+    8,
+    3
+  ]
+}

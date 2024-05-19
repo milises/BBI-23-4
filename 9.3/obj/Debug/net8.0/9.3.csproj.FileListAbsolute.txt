@@ -1,0 +1,17 @@
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/bin/Debug/net8.0/9.3
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/bin/Debug/net8.0/9.3.deps.json
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/bin/Debug/net8.0/9.3.runtimeconfig.json
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/bin/Debug/net8.0/9.3.dll
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/bin/Debug/net8.0/9.3.pdb
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.csproj.AssemblyReference.cache
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.AssemblyInfoInputs.cache
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.AssemblyInfo.cs
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.csproj.CoreCompileInputs.cache
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.csproj.CopyComplete
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.dll
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/refint/9.3.dll
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.pdb
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/9.3.genruntimeconfig.cache
+/Users/aleksandrpodzemelnyj/Downloads/ConsoleApp1/9.3/obj/Debug/net8.0/ref/9.3.dll
